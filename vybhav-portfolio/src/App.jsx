@@ -6,6 +6,9 @@ import Education from './components/Education';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Certifications from './components/Certifications';
 
 function App() {
   return (
@@ -14,9 +17,12 @@ function App() {
 
       <main className="p-6 space-y-12">
         <About />
+        <Contact />
         <Education />
         <Experience />
+        <Certifications />
         <Projects />
+        <Skills />
       </main>
 
       <Footer />
