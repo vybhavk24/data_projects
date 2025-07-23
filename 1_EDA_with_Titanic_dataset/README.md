@@ -1,10 +1,10 @@
-# 🚢 Titanic Data Cleaning & Exploration
+## Titanic Data Cleaning & Exploration
 
 This is a beginner-friendly data analysis project I worked on using the Titanic dataset from Kaggle. The goal was to explore and understand survival patterns through basic data cleaning, preprocessing, and visualization — all using core Python libraries like Pandas, NumPy, Matplotlib, and Seaborn.
 
 ---
 
-## 🧠 What I Wanted to Learn
+### What I Wanted to Learn
 
 I wanted to get hands-on with:
 - Handling missing data properly
@@ -16,7 +16,7 @@ This project lays the groundwork for any future work in data analytics or machin
 
 ---
 
-## 📁 Dataset Info
+### Dataset Info
 
 - Source: [Titanic - Machine Learning from Disaster (Kaggle)](https://www.kaggle.com/datasets/hesh97/titanicdataset-traincsv)
 - File used: `train.csv`
@@ -24,7 +24,7 @@ This project lays the groundwork for any future work in data analytics or machin
 
 ---
 
-## 🔧 What I Did (Step-by-Step)
+### What I Did (Step-by-Step)
 
 1. **Explored the dataset**  
    - Checked shape, column types, nulls, and basic stats.
@@ -44,7 +44,7 @@ This project lays the groundwork for any future work in data analytics or machin
 
 ---
 
-## 📊 Some Insights
+### Some Insights
 
 - **Females had a significantly higher survival rate** than males.
 - **First-class passengers** had the best survival chances.
@@ -53,7 +53,7 @@ This project lays the groundwork for any future work in data analytics or machin
 
 ---
 
-## 🛠 Tools & Libraries
+### Tools & Libraries
 
 - `pandas` and `numpy` for data wrangling  
 - `seaborn` and `matplotlib` for plotting  
@@ -61,18 +61,18 @@ This project lays the groundwork for any future work in data analytics or machin
 
 ---
 
-## ✅ What This Project Shows
+### What This Project Shows
 
 This isn't just about the Titanic — it’s about learning to treat messy real-world data with respect, clean it up, and draw actionable insights. This project helped me build the foundational mindset I’ll carry forward in future analytics, data science, and machine learning work.
 
 ---
 
-## 📌 Next Steps (Maybe)
+### Next Steps (In-future)
 
 Not part of this phase, but I might come back and:
 - Build a basic predictive model (like logistic regression)
 - Try deploying insights as a Streamlit dashboard
-- Compare this cleaned data with test.csv and submit a prediction to Kaggle just for fun
+- Compare this cleaned data with test.csv and submit a prediction to Kaggle :)
 
 ---
 
