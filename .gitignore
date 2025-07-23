@@ -47,3 +47,6 @@ yarn-error.log*
 
 # Tailwind's JIT cache
 .tailwindcache
+
+#back-up notebooks
+__ipynb_checkpoints/
