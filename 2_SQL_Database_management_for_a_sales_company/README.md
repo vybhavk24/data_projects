@@ -1,19 +1,19 @@
-# 🛒 Database management for a sales company
+## Database management for a sales company
 
 This project demonstrates SQL database design and analysis for a fictional retail company using a raw `.csv` dataset.
 
-## 📌 Project Goals
+### Project Goals
 - Convert raw sales CSV data into a normalized relational database
 - Practice database design, data wrangling, and SQL analytics
 - Gain experience relevant to database and data management modules in Master's programs
 
-## 🧰 Tools Used
+### Tools Used
 - SQLite (via DB Browser for SQLite)
 - SQL (standard dialect)
 - Git + GitHub
 - VS Code
 
-## 📂 Dataset
+### Dataset
 The dataset `retail_sales.csv` contains sales records including:
 - Order ID
 - Customer ID
@@ -23,11 +23,11 @@ The dataset `retail_sales.csv` contains sales records including:
 
 ---
 
-## 🗃️ Database Design
+### Database Design
 
 The CSV was normalized into **4 relational tables**:
 
-### 1. `customers`
+#### 1. `customers`
 | Column         | Type    |
 |----------------|---------|
 | customer_id    | TEXT PK |
@@ -37,7 +37,7 @@ The CSV was normalized into **4 relational tables**:
 | state          | TEXT    |
 | region         | TEXT    |
 
-### 2. `orders`
+#### 2. `orders`
 | Column      | Type    |
 |-------------|---------|
 | order_id    | TEXT PK |
@@ -46,7 +46,7 @@ The CSV was normalized into **4 relational tables**:
 | ship_mode   | TEXT    |
 | customer_id | FK      |
 
-### 3. `products`
+#### 3. `products`
 | Column      | Type    |
 |-------------|---------|
 | product_id  | TEXT PK |
@@ -54,7 +54,7 @@ The CSV was normalized into **4 relational tables**:
 | category    | TEXT    |
 | sub_category| TEXT    |
 
-### 4. `order_items`
+#### 4. `order_items`
 | Column      | Type    |
 |-------------|---------|
 | order_id    | FK      |
@@ -64,7 +64,7 @@ The CSV was normalized into **4 relational tables**:
 
 ---
 
-## 🔍 SQL Analytics
+### SQL Analytics
 
 Below are some key insights derived from SQL queries:
 
@@ -79,7 +79,7 @@ Below are some key insights derived from SQL queries:
 
 ---
 
-## ✅ Learning Outcome
+### Learning Outcome
 
 This project enhanced my skills in:
 - Database normalization
@@ -89,7 +89,7 @@ This project enhanced my skills in:
 
 ---
 
-## Credits
+### Credits
 
-Inspired by real-world sales data simulation and guided SQL practice.
-Applying the skills i've gained through SQL for data science by UC Davis.
+- Inspired by real-world sales data simulation and guided SQL practice.
+- Applying the skills i've gained through SQL for data science by UC Davis.
