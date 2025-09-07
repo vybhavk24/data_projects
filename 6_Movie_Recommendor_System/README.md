@@ -46,7 +46,7 @@ Movie_Recommender_System/
 1. **Clone the Repository**
 
 ```
-use git clone
+git clone https://github.com/vybhavk24/data_projects.git
 cd 6_Movie_Recommender_System
 ```
 
