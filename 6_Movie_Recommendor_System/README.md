@@ -47,7 +47,7 @@ Movie_Recommender_System/
 
 ```
 use git clone
-cd 6_Movie_Recommender_System (You can rename it)
+cd 6_Movie_Recommender_System
 ```
 
 2. **Create and Activate Virtual Environment** (recommended)
@@ -60,17 +60,11 @@ conda activate movie_recommender
 3. **Install Dependencies**
 
 ```
-pip install -r requirements.txt
-```
-
-If you don't have `requirements.txt`, manually install:
-
-```
-pip install streamlit scikit-learn scikit-surprise pandas
+pip install scikit-surprise
 ```
 
 > *Note:* Installing `scikit-surprise` can be tricky on macOS. If it fails, try:  
-> `pip install scikit-surprise --no-binary scikit-surprise`
+> pip install --no-binary :all: scikit-surprise
 
 4. **Download Dataset**  
 Place the MovieLens CSV files inside the `Dataset/` folder.  
