@@ -50,3 +50,5 @@ yarn-error.log*
 
 #back-up notebooks
 __ipynb_checkpoints/
+*.h5
+*.h5
