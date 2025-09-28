@@ -1,0 +1,33 @@
+<!--
+This is the results page built with Bootstrap that displays the outcome of a churn prediction.
+	1. It shows the predicted churn probability dynamically, passed from the backend, 
+        clearly highlighting the risk level.
+	2. The predicted class is presented with conditional formatting:
+	    If the prediction indicates churn (`1`), it shows “Likely to churn” in red for emphasis.
+	    If not (`0`), it shows “Not likely to churn” in green.
+	3. A button labeled “Try another” allows users to return to the input page to test more customer data.
+	4. The clean, minimal design focuses attention on the prediction result for quick interpretation.
+
+    Overall, this page effectively communicates the model’s churn prediction in an intuitive and visually distinct manner.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Prediction Result</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-4">
+  <h1>Prediction</h1>
+  <div class="alert alert-info">
+    <h4 class="alert-heading">Churn probability: {{ probability }}</h4>
+    <p>Predicted class: {% if prediction==1 %} <strong class="text-danger">Likely to churn</strong> {% else %} <strong class="text-success">Not likely to churn</strong> {% endif %}</p>
+  </div>
+
+  <a class="btn btn-secondary" href="/">Try another</a>
+</div>
+</body>
+</html>

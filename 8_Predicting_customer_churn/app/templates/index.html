@@ -1,0 +1,105 @@
+<!--
+This is a responsive HTML page built with Bootstrap that serves as the user interface for the churn prediction application.
+	1. It presents a form where users can input customer details relevant to predicting churn, 
+        including numeric entries like tenure and charges, and categorical selections such as gender, contract type, and internet service.
+	2. The form is neatly organized into sections and rows to improve usability and visual clarity on various devices.
+	3. When submitted, the form sends a POST request to the backend `/predict` route where the input data is processed 
+        and churn prediction is generated.
+	4. The page includes a submission button labeled “Predict churn” and a small footer note 
+        indicating the app uses a Flask-served machine learning pipeline.
+
+Overall, this page provides an easy-to-use front end for collecting customer data to engage with the churn prediction model.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Churn Predictor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-4">
+  <h1 class="mb-3">Telco Churn Predictor</h1>
+  <p>Fill customer details to predict churn probability.</p>
+
+  <form method="POST" action="/predict">
+    <div class="row">
+      <!-- Numeric inputs -->
+      <div class="col-md-3">
+        <label class="form-label">tenure</label>
+        <input name="tenure" class="form-control" type="number" step="1" value="12" required>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">MonthlyCharges</label>
+        <input name="MonthlyCharges" class="form-control" type="number" step="0.01" value="70.0" required>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">TotalCharges</label>
+        <input name="TotalCharges" class="form-control" type="number" step="0.01" value="1000.0" required>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">SeniorCitizen</label>
+        <select name="SeniorCitizen" class="form-select">
+          <option>0</option><option>1</option>
+        </select>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <label class="form-label">gender</label>
+        <select name="gender" class="form-select">
+          <option>Female</option><option>Male</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Contract</label>
+        <select name="Contract" class="form-select">
+          <option>Month-to-month</option><option>One year</option><option>Two year</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">PaymentMethod</label>
+        <select name="PaymentMethod" class="form-select">
+          <option>Electronic check</option><option>Mailed check</option><option>Bank transfer (automatic)</option><option>Credit card (automatic)</option>
+        </select>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-md-3">
+        <label class="form-label">InternetService</label>
+        <select name="InternetService" class="form-select">
+          <option>DSL</option><option>Fiber optic</option><option>No</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">PhoneService</label>
+        <select name="PhoneService" class="form-select">
+          <option>Yes</option><option>No</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">PaperlessBilling</label>
+        <select name="PaperlessBilling" class="form-select">
+          <option>Yes</option><option>No</option>
+        </select>
+      </div>
+      <div class="col-md-3 align-self-end">
+        <button class="btn btn-primary w-100" type="submit">Predict churn</button>
+      </div>
+    </div>
+  </form>
+
+  <hr>
+  <small class="text-muted">This demo uses a scikit-learn pipeline served via Flask.</small>
+</div>
+</body>
+</html>
